@@ -1,0 +1,33 @@
+div{
+   
+    margin: 10px;
+}
+
+.textbox{
+    padding: 5px;
+}
+
+.btn{
+    background-color: blue;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+form{
+    
+    padding: 10px;
+    width: 250px;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+#title-login{
+    font-weight: bold;
+    font-size: 30px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}

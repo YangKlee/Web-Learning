@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.main{
+    
+    width: 60%;
+    background-color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px;
+}
+.main > *{
+    margin-bottom: 10px;
+}
+.span.span--container{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+.span .span__choice{
+    display: flex;
+    margin-right: 30px;
+}
+.main .main__message{
+    display: none;
+    
+}
+.main .main__message{
+    text-align: center;
+}

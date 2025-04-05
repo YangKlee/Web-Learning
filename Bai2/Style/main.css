@@ -1,0 +1,47 @@
+form{
+    width: 350px;
+    align-self: center;
+    box-shadow: 1px 1px 5px;
+}
+.input_tb{
+    margin: 6px;
+    
+}
+table{
+    border-style: ridge;
+    border-color: gray;
+    text-align: left;
+    margin: 8px;
+    padding: 10px;
+   
+}
+table, th, td {
+    border-collapse: collapse;
+}
+
+form{
+    text-align: center;
+}
+.btn{
+    background-color: blue;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    border: 0px;
+    margin: 5px;
+    width: 100px;
+
+}
+.table-title
+{
+    color: white;
+    background-color: gray  ;
+}
+td{
+    padding: 0px;
+}
+.batbuoc
+{
+    margin: 4px ;
+}

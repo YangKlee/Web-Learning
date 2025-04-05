@@ -1,0 +1,56 @@
+.div-main.div-content{
+    display: flex;
+    justify-self: left;
+    margin: 6px 0px;
+}
+.title-content{
+    width: 200px;
+    margin-left: 10px;
+}
+form{
+    width: 410px;
+    box-shadow: 1px 1px 1px 1px black   ;
+    padding: 10px;
+}
+.title-form{
+    display: flex;
+    width: 410px;
+    color: white;
+    background-color: gray;
+    border: none;
+}
+.div-main{
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+.div-content{
+    border: none;
+    
+}
+.div-submit{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    margin: 5px 0px;
+}
+input{
+    background-color: #b2dcff;
+    border: 1px solid #2fa1ff;
+}
+span{
+    margin: 0;
+    background-color: #b2dcff;
+    display: flex;
+    justify-self: center;
+}
+.radio-inp{
+    margin: 3px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    width: auto;
+    height: 70px;
+    padding: 0px;
+}
+#div-title
+{
+
+}
+body{
+    margin: 0px;
+}
+#title-header{
+    margin: 15px;
+    font-size: 25px;
+    font-weight: normal;
+    
+    
+}
+#div-info
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+}
+#thi-sinh-name
+{
+    background-color: green;
+    color: white;
+    width: 200px;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+#div-exit{
+    width: 50px;
+}
+#div-content{
+    margin: 10px;
+}
+#div-submit
+{
+    display: block;
+}
+#file-upload
+{
+    border: 10px;
+    border-radius: 10%;
+}
+#form-content{
+    padding: 5px 8px;
+    background-color: antiquewhite;
+}
+#submit-btn{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+}

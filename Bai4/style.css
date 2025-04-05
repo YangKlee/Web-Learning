@@ -1,0 +1,40 @@
+.menu{
+    width: auto;
+    height: 35px;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+    padding: 1px 1px;
+}
+.table-header{
+  padding: 5px;
+}
+.title-yearstudy{
+    color: rgb(0, 0, 255);
+    background-color:  rgb(199, 214, 243);
+    font-weight: bold;
+    padding: 3px 3px;
+}
+.name-subject{
+    text-align: left;
+    padding-left: 5px;
+    width: 300px;
+}
+.detail-point{
+    text-align: center;
+}
+.summary-point{
+    text-align: left ;
+    font-weight: bold;
+    background-color: rgb(247, 238, 223);
+    padding: 5px;    
+}
+img{
+    width: 21px;
+    padding: 2px;
+    box-sizing: border-box;
+}
