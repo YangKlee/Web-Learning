@@ -15,6 +15,7 @@
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
+            
         }
         body{
 
@@ -50,6 +51,7 @@
             width: 100%;
             row-gap: 0px;
             column-gap: 0px;
+            font-size: 40px;
             
         }
         .info-table tr td{
@@ -65,10 +67,10 @@
         }
         .header-table{
             color: blue;
-            font-size: 2rem;
+            font-size: 60px;
         }
         .logo{
-            width: 100px;
+            width: 200px;
             position: absolute;
             transform: translate(-50%, -100%);
             left: 50%;
