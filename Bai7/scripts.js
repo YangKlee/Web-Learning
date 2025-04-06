@@ -1,50 +1,53 @@
-date = new Date();
-currMonth = date.getMonth();
-currYear = date.getYear();
-dateTmp = new Date();
-    dateTmp.setDate(1);
-    dateTmp.setMonth(currMonth);
-    dateTmp.setYear(currYear - 100 + 2000);
-window.onload = function()
-{
-   showInfo();
-   loadCann();
+var dateCurrent = new Date();
+
+function printLich() {
+    let currMonth = dateCurrent.getMonth();
+    let DateTmp = new Date();
+    DateTmp.setMonth(currMonth);
+    DateTmp.setDate(1);
+    console.log(DateTmp);
+    let CurrDay = DateTmp.getDay() -1;
+    DateTmp.setDate(DateTmp.getDate() - CurrDay);
+    console.log(DateTmp);
+    let htmlOut = "";
+    for (i = 1; i <= 35; i++) {
+      if(i == 1)
+      {
+        htmlOut += "<tr>";
+      }
+      if(DateTmp.getDate() == new Date().getDate() && DateTmp.getMonth() == new Date().getMonth())
+        {
+          htmlOut +=  "<td class='date-today'>"+ DateTmp.getDate() + "</td>";
+        }
+      else if (DateTmp.getMonth() == currMonth)
+        htmlOut +=  "<td class='date-normal'>"+ DateTmp.getDate() + "</td>";
+      else
+        htmlOut +=  "<td class='date-outMonth'>"+ DateTmp.getDate() + "</td>";
+      DateTmp.setDate(DateTmp.getDate() +1);
+      if (i % 7 == 0) {
+        htmlOut += "</tr>";
+        htmlOut += "<tr>";
+      }
+    }
+    document.getElementById("content-lich").innerHTML = htmlOut;
 }
 function showInfo()
 {
-    document.getElementById('month-info').innerText = `${currMonth + 1}/${currYear - 100 + 2000}`;
-    console.log(dateTmp.getDate())
+  document.getElementById("month-info").innerHTML = `Tháng ${dateCurrent.getMonth() + 1} năm ${dateCurrent.getFullYear()}`;
 }
-function congDate(x)
-{
-    dateTmp.setDate(dateTmp.getDate() + x);
 
+function changeNextMonth(){
+  dateCurrent.setMonth(dateCurrent.getMonth() +1);
+  showInfo();
+  printLich();
 }
-function truDate(x)
-{
-    dateTmp.setTime(dateTmp.getTime() - (24 * 60 * 60 * 1000)*x)
-
+function changePrevMonth(){
+  dateCurrent.setMonth(dateCurrent.getMonth() -1);
+  showInfo();
+  printLich();
 }
-function loadCann()
-{
+window.onload = function () {
 
-
-    let startDay = dateTmp.getDay();
-    let HTMLOut = "";
-    HTMLOut += '<tr>'
-    truDate(startDay);
-
-    while (dateTmp.getMonth() <= currMonth)
-    {
-        if(dateTmp.getDay() === 0)
-        {
-               HTMLOut += '<tr>'
-        }
-        HTMLOut += `<td>${dateTmp.getDate()}</td>`;
-        if(dateTmp.getDay() === 6)
-             HTMLOut += '</tr>'
-        
-        congDate(1);
-    }
-    document.getElementById('lich-table').innerHTML += HTMLOut;
-}
+    showInfo();
+    printLich();
+};
