@@ -1,5 +1,5 @@
 var timeCurrent = new Date();
-var timeTarget = new Date("2026-02-17 0:0:0");
+var timeTarget = new Date("2025-04-11 15:0:0");
 var title = "Đếm ngược kiểm tra lịch sử Đảng"
 var timeRemain ={
     day:0,
@@ -43,9 +43,10 @@ function loadInfo()
 {
     document.getElementById('nofi').innerHTML = title;
     document.getElementById("time-target").innerHTML = "Thời gian mục tiêu: " +timeTarget.toDateString() +" "+ timeTarget.toTimeString();
+    
 }
 function showInfo(timeRemain)
-{
+{   
     if(timeRemain.day < 10)
         document.getElementById("day_lb").innerHTML = '0'+ timeRemain.day;
     else
@@ -85,6 +86,8 @@ window.onload = function(){
     var IDInterval = setInterval(
         function ()
         {
+            document.getElementById('bgAudio').play();
+            document.getElementById("timecurrent").innerHTML = "Thời gian hiện tại:" + timeCurrent.toDateString() +" "+ timeCurrent.toTimeString();
             timeRemain.tick(IDInterval);
             showInfo(timeRemain)
         }

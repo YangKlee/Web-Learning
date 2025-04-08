@@ -7,6 +7,8 @@
 }
 body{
     background-image: url("./src/1161810.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 body::before {
     position: fixed;
@@ -19,13 +21,13 @@ body::before {
 }
 .container{
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     padding: 10px 20px;
-    width: 1500px;
+    width: 1300px;
     border-radius: 20px;
 }
 .container-header h1{
@@ -36,14 +38,14 @@ body::before {
 .container-timedisplay{
     display: flex;
     justify-content: center;
-    gap: 130px;
+    gap: 80px;
     flex-wrap: wrap;
 }
 .container-timedisplay .timebox{
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 10px 30px;
     width: auto;
     text-align: center;
     border-radius: 20px;
@@ -56,4 +58,34 @@ body::before {
 .timedisplay-title{
     font-style: italic;
     font-size: 30px;
+}
+.container-header
+{
+    text-align: center;
+
+}
+.container-header > *
+{
+    margin-bottom: 30px;
+    
+}
+.container-timedisplay{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container-header h2{
+    font-size: 40px;
+}
+.container-header h3{
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+.footer-info{
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+
+}
+.footer-info >*{
+    margin-bottom: 20px;
 }

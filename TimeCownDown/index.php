@@ -32,9 +32,18 @@
                 <label for="" class="timedisplay-title sec-title">Giây</label>
             </div>
             </div>
+            <div class="footer-info">
+                <div id="slogan">Học đi em, đừng lười nữa</div>
+                <div id="timecurrent"></div>
+            </div>
+            <audio id="bgAudio" loop>
+            <source src="./src/sound.mp3" type="audio/mpeg">
+            </audio>
         </div>
-        <div class="slogan">
-        <div class="timecurrent"></div>
+
     </div>
+
+
+</audio>
 </body>
 </html>
