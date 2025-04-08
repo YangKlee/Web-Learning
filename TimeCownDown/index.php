@@ -11,8 +11,8 @@
     <div class="container">
         <div class="container-header">
             <h1>TIME COWNDOWN</h1>
-            <h2 id="nofi"></h2>
-            <h3 id="time-target"></h3>
+            <p id="nofi"></p>
+            <p id="time-target"></p>
         </div>
         <div class="container-timedisplay">
             <div class="timebox day">

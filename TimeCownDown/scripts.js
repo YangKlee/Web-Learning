@@ -42,7 +42,7 @@ var timeRemain ={
 function loadInfo()
 {
     document.getElementById('nofi').innerHTML = title;
-    document.getElementById("time-target").innerHTML = "Thời gian mục tiêu: " +timeTarget.toDateString() +" "+ timeTarget.toTimeString();
+    document.getElementById("time-target").innerHTML = "Thời gian mục tiêu: "+ timeTarget.toLocaleString();
     
 }
 function showInfo(timeRemain)

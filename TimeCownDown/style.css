@@ -7,7 +7,9 @@
 }
 body{
     background-image: url("./src/1161810.jpg");
-    background-size: cover;
+
+    height: 100vh;
+
     background-repeat: no-repeat;
 }
 body::before {
@@ -23,6 +25,7 @@ body::before {
     position: absolute;
     top: 50%;
     left: 50%;
+
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
@@ -52,7 +55,7 @@ body::before {
 
 }
 .timedisplay-num{
-    font-size: 80px;
+    font-size: 100px;
     font-weight: bold;
 }
 .timedisplay-title{
@@ -73,19 +76,65 @@ body::before {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.container-header h2{
-    font-size: 40px;
+#nofi{
+    font-size: 50px;
 }
-.container-header h3{
+#time-target{
     font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 .footer-info{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     font-style: italic;
 
 }
 .footer-info >*{
     margin-bottom: 20px;
+}
+@media (max-width : 1328px) {
+    .container-timedisplay{
+        display: block;
+        flex-direction: column;
+
+    }
+    .container-timedisplay > *{
+        margin-bottom: 20px;
+
+    }
+    .container{
+        position: unset;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(10px);
+        transform: unset;
+        margin: 30px auto;
+        padding: 10px 20px;
+        width: 95%;
+
+    }
+    body::before {
+        display: none;
+    
+    }
+    .timedisplay-num{
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .timedisplay-title{
+        font-style: italic;
+        font-size: 20px;
+    }
+    .container-header h1{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+    }
+    #nofi{
+        font-size: 30px;
+    }
+    #time-target{
+        font-style: italic;
+        font-size: 20px;
+    }
+
 }
